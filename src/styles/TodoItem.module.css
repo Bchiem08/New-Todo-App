@@ -1,0 +1,26 @@
+.taskcard {
+  position: absolute;
+  width: 345px;
+  height: 97px;
+  left: 18px;
+  top: 21px;
+
+  background: #c4c4c4;
+  border-radius: 5px;
+}
+
+.tasktitle {
+  position: absolute;
+  width: 321px;
+  height: 35px;
+  left: 14px;
+  top: 14px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
