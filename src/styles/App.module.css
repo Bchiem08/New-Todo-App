@@ -24,3 +24,32 @@
 
   color: #000000;
 }
+
+.Addbutton {
+  /* Gray 1 */
+
+  background: #333333;
+  border-radius: 5px;
+
+  position: absolute;
+  height: 45px;
+  left: 125px;
+  right: 30px;
+  top: 229px;
+  width: 270px;
+
+  /* H5 - reg 24 - standard */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
