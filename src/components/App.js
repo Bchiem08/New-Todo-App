@@ -3,6 +3,8 @@ import style from "../styles/App.module.css";
 import TodoList from "../components/TodoList.js";
 import TodoInput from "../components/TodoInput.js";
 import PriorityDropDown from "../components/Priority.js";
+import Checkbox from "../components/Checkbox.js";
+import FilterPriority from "../components/FilterPriority.js";
 
 export class App extends React.Component {
   constructor(props) {
@@ -34,14 +36,15 @@ export class App extends React.Component {
       title: this.state.taskName,
       Priority: this.state.currentPriority,
     };
-    // newList = [...this.state.list, NewTask]
-    // this.setState((prevState)=>{
+
+    // newList = [...this.state.list, NewTask];
+    // this.setState((prevState) => {
     //   return {
     //     list: newList,
     //     currentPriority: 5,
-    //     task: ""
-    //   }
-    // })
+    //     task: "",
+    //   };
+    // });
     // console.log(this.state);
     // console.log(NewTask);
   }
@@ -56,6 +59,8 @@ export class App extends React.Component {
           <PriorityDropDown
             handleCurrentPriorityChange={this.handleCurrentPriorityChange}
           />
+          <Checkbox />
+          <FilterPriority />
         </div>
         <form>
           <button className={style.Addbutton} onClick={this.handleSubmit}>

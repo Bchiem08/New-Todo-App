@@ -1,9 +1,9 @@
-.dropdownStyle {
+.filter {
   position: absolute;
   height: 45px;
-  left: 0px;
+  left: 175px;
   right: 0px;
-  top: 30px;
+  top: 278px;
 
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -28,14 +28,4 @@
   /* Gray 2 */
 
   color: #4f4f4f;
-}
-
-.labelStyle {
-  position: absolute;
-  left: 15px;
-  top: 200px;
-}
-
-.liststyle {
-  list-style-type: none;
 }

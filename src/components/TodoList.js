@@ -5,9 +5,11 @@ import TodoItem from "../components/TodoItem";
 export default class TodoList extends Component {
   render() {
     return (
-      <div className={style.list}>
-        <TodoItem />
-      </div>
+      <ul className={style.list}>
+        <div>
+          <TodoItem />
+        </div>
+      </ul>
     );
   }
 }

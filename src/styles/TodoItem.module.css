@@ -1,12 +1,14 @@
 .taskcard {
   position: absolute;
-  width: 345px;
+  width: 380px;
   height: 97px;
-  left: 18px;
+  left: 8px;
   top: 21px;
 
   background: #c4c4c4;
   border-radius: 5px;
+
+  list-style-type: none;
 }
 
 .tasktitle {
@@ -14,9 +16,56 @@
   width: 321px;
   height: 35px;
   left: 14px;
-  top: 14px;
+  bottom: 5px;
 
-  font-family: Roboto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.deletebutton {
+  position: absolute;
+  width: 95px;
+  height: 36px;
+  left: 270px;
+  top: 52px;
+
+  /* BUTTON - med 14 */
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: capitalize;
+
+  /* Black / Inactive */
+
+  color: rgba(0, 0, 0, 0.54);
+
+  /* Black / Inactive */
+
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.prioritytitle {
+  position: absolute;
+  width: 210px;
+  height: 15px;
+  left: 14px;
+  top: 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

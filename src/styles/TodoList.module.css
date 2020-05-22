@@ -1,7 +1,9 @@
 .list {
   position: absolute;
-  width: 403px;
-  height: 393px;
+  width: 360px;
+  height: 410px;
   left: 6px;
-  top: 275px;
+  top: 310px;
+
+  background: #f0f0f0;
 }
