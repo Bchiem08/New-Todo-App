@@ -4,6 +4,9 @@
   height: 410px;
   left: 6px;
   top: 310px;
+  align-items: center;
 
   background: #f0f0f0;
+
+  list-style-type: none;
 }

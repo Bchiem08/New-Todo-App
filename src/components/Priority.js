@@ -7,17 +7,17 @@ export default class PriorityDropDown extends Component {
       <label className={style.labelStyle}>
         Priority
         <select
+          value={this.props.currentPriority}
           className={style.dropdownStyle}
-          selected={5}
           onChange={(e) => {
             this.props.handleCurrentPriorityChange(e.target.value);
           }}
         >
-          <option currentPriority="5">5</option>
-          <option currentPriority="4">4</option>
-          <option currentPriority="3">3</option>
-          <option currentPriority="2">2</option>
-          <option currentPriority="1">1</option>
+          <option value={Number("5")}>5</option>
+          <option value={Number("4")}>4</option>
+          <option value={Number("3")}>3</option>
+          <option value={Number("2")}>2</option>
+          <option value={Number("1")}>1</option>
         </select>
       </label>
     );

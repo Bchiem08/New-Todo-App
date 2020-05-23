@@ -1,14 +1,14 @@
 .taskcard {
-  position: absolute;
+  position: relative;
   width: 380px;
   height: 97px;
-  left: 8px;
-  top: 21px;
+  left: -40px;
 
   background: #c4c4c4;
   border-radius: 5px;
 
   list-style-type: none;
+  margin: 10px;
 }
 
 .tasktitle {

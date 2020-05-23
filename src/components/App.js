@@ -20,6 +20,7 @@ export class App extends React.Component {
     this.handleCurrentPriorityChange = this.handleCurrentPriorityChange.bind(
       this
     );
+    this.handleTaskNameChange = this.handleTaskNameChange.bind(this);
   }
 
   handleCurrentPriorityChange(priority) {
@@ -36,17 +37,22 @@ export class App extends React.Component {
       title: this.state.taskName,
       Priority: this.state.currentPriority,
     };
+    console.log(this.state);
 
-    // newList = [...this.state.list, NewTask];
-    // this.setState((prevState) => {
-    //   return {
-    //     list: newList,
-    //     currentPriority: 5,
-    //     task: "",
-    //   };
-    // });
-    // console.log(this.state);
-    // console.log(NewTask);
+    const newList = [...this.state.list, NewTask];
+    this.setState({
+      list: newList,
+      currentPriority: 5,
+      taskName: "",
+    });
+  }
+
+  handleTaskNameChange(NewTaskName) {
+    this.setState((prevState) => {
+      return {
+        taskName: NewTaskName,
+      };
+    });
   }
 
   render() {
@@ -54,10 +60,14 @@ export class App extends React.Component {
       <div>
         <div className={style.app}>
           <h1 className={style.title}>#TODO List</h1>
-          <TodoInput />
-          <TodoList />
+          <TodoInput
+            handleTaskNameChange={this.handleTaskNameChange}
+            taskName={this.state.taskName}
+          />
+          <TodoList list={this.state.list} />
           <PriorityDropDown
             handleCurrentPriorityChange={this.handleCurrentPriorityChange}
+            currentPriority={this.state.currentPriority}
           />
           <Checkbox />
           <FilterPriority />
