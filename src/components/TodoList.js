@@ -5,7 +5,18 @@ import TodoItem from "../components/TodoItem";
 export default class TodoList extends Component {
   render() {
     const list = this.props.list.map((currenttask, index) => {
-      return <li key={index}>{<TodoItem task={currenttask} />}</li>;
+      console.log(currenttask, index);
+      return (
+        <li key={index}>
+          {
+            <TodoItem
+              task={currenttask}
+              onDelete={this.handleDelete}
+              item={index}
+            />
+          }
+        </li>
+      );
     });
     return (
       <ul className={style.list} value={this.props.list}>

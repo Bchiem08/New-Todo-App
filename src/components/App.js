@@ -21,6 +21,7 @@ export class App extends React.Component {
       this
     );
     this.handleTaskNameChange = this.handleTaskNameChange.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleCurrentPriorityChange(priority) {
@@ -55,6 +56,8 @@ export class App extends React.Component {
     });
   }
 
+  handleDelete = () => {};
+
   render() {
     return (
       <div>
@@ -64,7 +67,7 @@ export class App extends React.Component {
             handleTaskNameChange={this.handleTaskNameChange}
             taskName={this.state.taskName}
           />
-          <TodoList list={this.state.list} />
+          <TodoList list={this.state.list} handleDelete={this.handleDelete} />
           <PriorityDropDown
             handleCurrentPriorityChange={this.handleCurrentPriorityChange}
             currentPriority={this.state.currentPriority}
